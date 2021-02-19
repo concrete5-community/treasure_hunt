@@ -21,6 +21,8 @@ class Settings extends DashboardPageController
 
     public function save()
     {
+        $th = $this->app->make('helper/text');
+
         try {
             if (!$this->app['token']->validate('treasure_hunt.settings.save')) {
                 throw new Exception($this->app['token']->getErrorMessage());
@@ -30,6 +32,9 @@ class Settings extends DashboardPageController
                 throw new Exception(t("Minimum items required missing"));
             }
 
+            $cookie_name = $th->handle($this->post('cookie_name'));
+
+            $this->app['config']->save('treasure_hunt.settings.cookie_name', $cookie_name);
             $this->app['config']->save('treasure_hunt.settings.message_complete', $this->post('message_complete'));
             $this->app['config']->save('treasure_hunt.settings.min_items', $this->post('min_items'));
             $this->app['config']->save('treasure_hunt.settings.completed_cid', $this->post('completed_cid'));

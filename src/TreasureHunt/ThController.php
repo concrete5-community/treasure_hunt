@@ -80,7 +80,7 @@ class ThController extends Controller
 
         $expire = time() + (3600 * 24 * 365);
         $cookie->set(
-            'treasure-hunt',
+            $this->getCookieName(),
             1,
             $expire,
             DIR_REL . '/',
@@ -88,6 +88,17 @@ class ThController extends Controller
             $config->get('concrete.session.cookie.cookie_secure'),
             $config->get('concrete.session.cookie.cookie_httponly')
         );
+    }
+
+    /**
+     * @return string
+     */
+    protected function getCookieName()
+    {
+        $config = $this->app['config'];
+        $cookie_name = $config->get('treasure_hunt.settings.cookie_name');
+
+        return $cookie_name ? $cookie_name : 'treasure-hunt';
     }
 
     /**

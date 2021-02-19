@@ -12,8 +12,15 @@ $ps = Core::make('helper/form/page_selector');
 }
 </style>
 
-<form method="post" action="<?php   echo $controller->action('save') ?>">
+<form method="post" action="<?php  echo $controller->action('save') ?>">
 	<?php  $token->output('treasure_hunt.settings.save'); ?>
+
+    <div class="form-group">
+        <?php 
+        echo $form->label('cookie_name', t('Cookie name'));
+        echo $form->text('cookie_name', Config::get('treasure_hunt.settings.cookie_name'), array('required' => 1));
+        ?>
+    </div>
 
     <div class="form-group">
         <?php  

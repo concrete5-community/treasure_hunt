@@ -6,6 +6,7 @@ use Concrete\Core\Asset\AssetList;
 use Concrete\Core\Package\Package;
 use Concrete\Core\View\View;
 use Core;
+use Config;
 use Events;
 use Page;
 use Redirect;
@@ -18,7 +19,7 @@ class Controller extends Package
 {
     protected $pkgHandle = 'treasure_hunt';
     protected $appVersionRequired = '5.7.5.4';
-    protected $pkgVersion = '0.9.9';
+    protected $pkgVersion = '1.0';
 
     protected $single_pages = array(
         '/dashboard/treasure_hunt' => array(
@@ -44,7 +45,7 @@ class Controller extends Package
         $this->registerNamespace();
         $this->registerRoutes();
         $this->secureFinishPage();
-        //Events::addListener('on_before_render', array($this, 'registerAndRequireAssets'));
+        Events::addListener('on_before_render', array($this, 'registerAndRequireAssets'));
     }
 
     public function install()
@@ -149,6 +150,10 @@ var TREASURE_HUNT_OK_BUTTON_CAPTION = '.json_encode($controller->getPopupButtonC
     {
         $this->installPages($pkg);
         $this->installBlockTypes($pkg);
+
+        if (!Config::get('treasure_hunt.settings.cookie_name')) {
+            Config::save('treasure_hunt.settings.cookie_name', 'treasure-hunt');
+        }
     }
 
     /**
