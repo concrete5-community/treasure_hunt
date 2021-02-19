@@ -1,0 +1,176 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: treasure_hunt 0.9.7\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2016-08-05T11:06:53+00:00\n"
+"PO-Revision-Date: 2016-08-05T11:06:53+00:00\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: packages/treasure_hunt/blocks/image/templates/treasure_hunt
+msgctxt "TemplateFileName"
+msgid "Treasure Hunt"
+msgstr ""
+
+#: packages/treasure_hunt/controller.php:36
+#: packages/treasure_hunt/controller.php:41
+msgid "Treasure Hunt"
+msgstr ""
+
+#: packages/treasure_hunt/controller.php:56
+#, php-format
+msgid "You need PHP %s or higher to run this add-on."
+msgstr ""
+
+#: packages/treasure_hunt/blocks/image/templates/treasure_hunt/view.php:56
+#: packages/treasure_hunt/blocks/image_th/view.php:47
+msgid "Empty Image Block."
+msgstr ""
+
+#: packages/treasure_hunt/blocks/image_th/composer.php:23
+#: packages/treasure_hunt/blocks/image_th/form.php:14
+msgid "Choose Image"
+msgstr ""
+
+#: packages/treasure_hunt/blocks/image_th/controller.php:28
+msgid "Treasure Hunt Image Block"
+msgstr ""
+
+#: packages/treasure_hunt/blocks/image_th/controller.php:33
+msgid "Image (Treasure Hunt)"
+msgstr ""
+
+#: packages/treasure_hunt/blocks/image_th/controller.php:116
+msgid "You must select an image."
+msgstr ""
+
+#: packages/treasure_hunt/blocks/image_th/controller.php:221
+msgid "You must specify a valid image file."
+msgstr ""
+
+#: packages/treasure_hunt/blocks/image_th/form.php:9
+msgid "Files"
+msgstr ""
+
+#: packages/treasure_hunt/blocks/image_th/form.php:13
+msgid "Image"
+msgstr ""
+
+#: packages/treasure_hunt/blocks/image_th/form.php:19
+msgid "Image Hover"
+msgstr ""
+
+#: packages/treasure_hunt/blocks/image_th/form.php:19
+msgid "(Optional)"
+msgstr ""
+
+#: packages/treasure_hunt/blocks/image_th/form.php:21
+msgid "Choose Image On-State"
+msgstr ""
+
+#: packages/treasure_hunt/blocks/image_th/form.php:27
+msgid "HTML"
+msgstr ""
+
+#: packages/treasure_hunt/blocks/image_th/form.php:31
+msgid "Alt. Text"
+msgstr ""
+
+#: packages/treasure_hunt/blocks/image_th/form.php:38
+msgid "Title"
+msgstr ""
+
+#: packages/treasure_hunt/blocks/image_th/form.php:45
+msgid "Custom Popup Message"
+msgstr ""
+
+#: packages/treasure_hunt/blocks/image_th/form.php:52
+msgid "Resize Image"
+msgstr ""
+
+#: packages/treasure_hunt/blocks/image_th/form.php:59
+msgid "Constrain Image Size"
+msgstr ""
+
+#: packages/treasure_hunt/blocks/image_th/form.php:68
+msgid "Max Width"
+msgstr ""
+
+#: packages/treasure_hunt/blocks/image_th/form.php:75
+msgid "Max Height"
+msgstr ""
+
+#: packages/treasure_hunt/controllers/single_page/dashboard/treasure_hunt/settings.php:30
+msgid "Minimum items required missing"
+msgstr ""
+
+#: packages/treasure_hunt/controllers/single_page/dashboard/treasure_hunt/settings.php:47
+msgid "Settings saved"
+msgstr ""
+
+#: packages/treasure_hunt/single_pages/dashboard/treasure_hunt/settings.php:20
+msgid "Minimum items required"
+msgstr ""
+
+#: packages/treasure_hunt/single_pages/dashboard/treasure_hunt/settings.php:27
+msgid "Show popup message when minimum number of items have been found"
+msgstr ""
+
+#: packages/treasure_hunt/single_pages/dashboard/treasure_hunt/settings.php:34
+msgid "Redirect user to page when minimum number of items have been found"
+msgstr ""
+
+#: packages/treasure_hunt/single_pages/dashboard/treasure_hunt/settings.php:41
+msgid "Popup Title (placeholders: %FOUND%, %REMAINING%)"
+msgstr ""
+
+#: packages/treasure_hunt/single_pages/dashboard/treasure_hunt/settings.php:48
+msgid "Popup Button Caption"
+msgstr ""
+
+#: packages/treasure_hunt/single_pages/dashboard/treasure_hunt/settings.php:57
+msgid "Popup message when an item is found"
+msgstr ""
+
+#: packages/treasure_hunt/single_pages/dashboard/treasure_hunt/settings.php:67
+msgid "Add"
+msgstr ""
+
+#: packages/treasure_hunt/single_pages/dashboard/treasure_hunt/settings.php:75
+msgid "Current popup messages:"
+msgstr ""
+
+#: packages/treasure_hunt/single_pages/dashboard/treasure_hunt/settings.php:81
+msgid "Delete"
+msgstr ""
+
+#: packages/treasure_hunt/single_pages/dashboard/treasure_hunt/settings.php:86
+msgid "No popup messages have been added yet."
+msgstr ""
+
+#: packages/treasure_hunt/single_pages/dashboard/treasure_hunt/settings.php:96
+msgid "Save"
+msgstr ""
+
+#: packages/treasure_hunt/src/TreasureHunt/ThController.php:101
+msgid "Congratulations! You've found all the items!"
+msgstr ""
+
+#: packages/treasure_hunt/src/TreasureHunt/ThController.php:133
+#, php-format
+msgid "Treasure Hunt. Remaining: %s."
+msgstr ""
+
+#: packages/treasure_hunt/src/TreasureHunt/ThController.php:148
+msgid "You found one of the items, well done!"
+msgstr ""
+
+#: packages/treasure_hunt/src/TreasureHunt/ThController.php:158
+msgctxt "Treasure Hunt Popup Button Caption"
+msgid "Ok!"
+msgstr ""
